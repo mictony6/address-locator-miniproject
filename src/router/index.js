@@ -3,8 +3,8 @@ import HomeView from "../views/HomeView.vue";
 
 const routes = [
   {
-    path: "/",
-    name: "home",
+    path: "/locate/:province?/:municipality?/:barangay?/:searchText?",
+    name: "locator",
     component: HomeView,
   },
 ];
