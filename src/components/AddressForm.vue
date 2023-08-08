@@ -101,7 +101,7 @@
         </div>
 
         <div class="field">
-          <div class="control">
+          <div class="control" :class="{ 'is-loading': !isSuggestionsReady }">
             <label for="addressInput" class="label">Address:</label>
             <input
               :disabled="isBarangayDisabled"
@@ -188,7 +188,8 @@ export default {
   },
   data() {
     return {
-      localPlaceUrl: "",
+      localPlaceUrl:
+        "https://www.google.com/maps/embed/v1/place?key=AIzaSyAwn13ThmiYHeKpMG63f24oiVVsGjP_oWc&q=Philippines",
     };
   },
   computed: {
@@ -200,8 +201,6 @@ export default {
       "barangay",
       "searchText",
       "suggestions",
-      "isLoading",
-      "loadProgress",
       "isSuggestionsReady",
     ]),
     ...mapGetters([

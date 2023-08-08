@@ -10,4 +10,19 @@
   background: rgb(66, 178, 98)
 }
 
-@import "bulma/bulma.sass";
+@import "bulma/sass/utilities/all";
+@import "bulma/sass/base/all";
+@import "bulma/sass/elements/box";
+@import "bulma/sass/elements/container";
+@import "bulma/sass/elements/icon";
+@import "bulma/sass/elements/form";
+@import "bulma/sass/elements/title";
+@import "bulma/sass/elements/button";
+@import "bulma/sass/elements/content";
+@import "bulma/sass/helpers/spacing";
+@import "bulma/sass/helpers/typography";
+@import "bulma/sass/helpers/color";
+@import "bulma/sass/layout/hero";
+@import "bulma/sass/grid/columns";
+@import "bulma/sass/form/all";
+@import "bulma/sass/components/level";

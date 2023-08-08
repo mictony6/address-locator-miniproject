@@ -1,7 +1,6 @@
 <template>
   <figure class="image p-4">
     <iframe
-      v-show="isMapShow"
       class="map-frame"
       loading="lazy"
       allowfullscreen
@@ -12,15 +11,10 @@
   </figure>
 </template>
 <script>
-import { mapGetters } from "vuex";
-
 export default {
   name: "EmbeddedMap",
   props: {
     localPlaceUrl: {},
-  },
-  computed: {
-    ...mapGetters(["isMapShow"]),
   },
 };
 </script>

@@ -12,8 +12,6 @@ export default createStore({
     suggestions: [],
     barangaysCache: {},
     suggestionsCache: {},
-    isLoading: true,
-    loadProgress: 15,
     isSuggestionsReady: true,
   },
   getters: {
@@ -49,9 +47,6 @@ export default createStore({
     },
   },
   mutations: {
-    setIsLoading(state, payload) {
-      state.isLoading = payload.value;
-    },
     setOptions(state, payload) {
       state.options = payload.value;
     },
@@ -92,9 +87,6 @@ export default createStore({
 
       state.suggestionsCache[province][municipality][barangay][searchText] =
         suggestions;
-    },
-    setLoadProgress(state, payload) {
-      state.loadProgress = payload.value;
     },
     setIsSuggestionsReady(state, payload) {
       state.isSuggestionsReady = payload.value;
